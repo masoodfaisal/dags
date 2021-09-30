@@ -92,6 +92,11 @@ notebook_op_91a3738b_783b_4eb6_823c_1b8b013a4d51 = NotebookOp(
         "AWS_SECRET_ACCESS_KEY": "minio123",
         "ELYRA_ENABLE_PIPELINE_INFO": "True",
         "S3_ENDPOINT": "http://172.30.29.255:9000",
+        "PYSPARK_DRIVER_PYTHON": "jupyter",
+        "PYSPARK_DRIVER_PYTHON_OPTS": "notebook",
+        "SPARK_HOME": "/opt/app-root/lib/python3.6/site-packages/pyspark/",
+        "PYTHONPATH": "$PYTHONPATH:/opt/app-root/lib/python3.6/site-packages/:/opt/app-root/lib/python3.6/site-packages/pyspark/python/:/opt/app-root/lib/python3.6/site-packages/pyspark/python/lib/py4j-0.8.2.1-src.zip",
+        "SPARK_CLUSTER" : "spark-cluster-ross-cluster"
     },
     config_file="None",
     dag=dag,
