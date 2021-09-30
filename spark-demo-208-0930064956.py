@@ -97,7 +97,8 @@ notebook_op_91a3738b_783b_4eb6_823c_1b8b013a4d51 = NotebookOp(
         "SPARK_HOME": "/opt/app-root/lib/python3.6/site-packages/pyspark/",
         "PYTHONPATH": "$PYTHONPATH:/opt/app-root/lib/python3.6/site-packages/:/opt/app-root/lib/python3.6/site-packages/pyspark/python/:/opt/app-root/lib/python3.6/site-packages/pyspark/python/lib/py4j-0.8.2.1-src.zip",
         "SPARK_CLUSTER" : "spark-cluster-ross-cluster",
-        "SPARK_DRIVER_HOST" : "ross-cluster-nb"
+        "SPARK_DRIVER_HOST" : "ross-cluster-nb",
+        "PYSPARK_SUBMIT_ARGS":"--conf spark.driver.host=ross-cluster-nb --conf spark.cores.max=2 --conf spark.executor.instances=2 --conf spark.executor.memory=1G --conf spark.executor.cores=1 --conf spark.driver.memory=2G --packages com.amazonaws:aws-java-sdk:1.7.4,org.apache.hadoop:hadoop-aws:2.7.3 pyspark-shell"
 
     },
     config_file="None",
