@@ -96,7 +96,9 @@ notebook_op_91a3738b_783b_4eb6_823c_1b8b013a4d51 = NotebookOp(
         "PYSPARK_DRIVER_PYTHON_OPTS": "notebook",
         "SPARK_HOME": "/opt/app-root/lib/python3.6/site-packages/pyspark/",
         "PYTHONPATH": "$PYTHONPATH:/opt/app-root/lib/python3.6/site-packages/:/opt/app-root/lib/python3.6/site-packages/pyspark/python/:/opt/app-root/lib/python3.6/site-packages/pyspark/python/lib/py4j-0.8.2.1-src.zip",
-        "SPARK_CLUSTER" : "spark-cluster-ross-cluster"
+        "SPARK_CLUSTER" : "spark-cluster-ross-cluster",
+        "SPARK_DRIVER_HOST" : "ross-cluster-nb"
+
     },
     config_file="None",
     dag=dag,
